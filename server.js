@@ -21,7 +21,14 @@ app.use(express.static('public'));
 app.use(express.static('views'));
 
 // connect to database
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", { useNewUrlParser: true, useUnifiedTopology: true }); //boilerplate (replace populate with db name)
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/workoutdb", 
+  { 
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  });
 
 app.get('/exercise', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/exercise.html'));
