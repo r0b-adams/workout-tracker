@@ -16,15 +16,33 @@ This application allows a user to create a new workout or add exercises to an ex
 
 ## Installation
 
-after cloning, run npm i; can seed test data with npm run seed
+Clone repo and install dependencies:
+```
+git clone https://github.com/comatosino/e-commerce-back-end.git
+npm i
+```
+Populate database with seed data (if needed):
+```
+npm run seed
+```
+To run:
+```
+npm start
+```
+OR with Nodemon:
+```
+npm run watch
+```
 
 ## Usage
 
-click the gif below to check out the application!
+Click the gif below to check out the application!
+
+[![link to video](./assets/images/workout-tracker.gif)](https://bobs-workout-tracker.herokuapp.com/)
 
 ## Contributing
 
-contact me at one of the links below if you'd like to contribute!
+Contact me at one of the links below if you'd like to contribute!
 
 ## Questions
 
